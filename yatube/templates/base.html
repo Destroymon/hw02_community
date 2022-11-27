@@ -19,11 +19,16 @@
     {% endblock %}
     
   </head>
-  <body>
-    {% include 'includes/header.html' %}
-
-    {% block content %}
-    {% endblock %}
-
+   <body>
+      {% include 'includes/header.html' %}
+    <nav></nav>
+    <main>
+      <div class="container py-5">
+        {% block content %}
+        Ошибка
+        {% endblock content %}
+      </div>
+    </main>
     {% include 'includes/footer.html' %}
   </body>
+</html>
